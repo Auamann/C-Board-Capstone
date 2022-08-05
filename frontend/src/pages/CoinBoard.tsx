@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, {useEffect, useState} from 'react';
 import axios from 'axios';
-import Coin from "../components/Coin"
+import CoinData from "../components/CoinData"
 import "./CoinBoard.css"
 
 
-function CoinBoard () {
+function CoinBoard() {
     const [coins, setCoins] = useState<any[]>([]);
     const [search, setSearch] = useState('');
 
@@ -27,8 +27,7 @@ function CoinBoard () {
 
     const filteredCoins = coins.filter(coin =>
         coin.name.toLowerCase().includes(search.toLowerCase()
-
-    ))
+        ))
 
     return (
         <div className='coin-app'>
@@ -43,21 +42,25 @@ function CoinBoard () {
                     />
                 </form>
             </div>
-            {filteredCoins.map(coin => {
-                return (
-                    <Coin
-                        key={coin.id}
-                        name={coin.name}
-                        price={coin.current_price}
-                        symbol={coin.symbol}
-                        market_cap={coin.total_volume}
-                        volume={coin.market_cap}
-                        image={coin.image}
-                        priceChange={coin.price_change_percentage_24h}
-                    />
-                );
-            })}
+            <div className="coin-container">
+                {filteredCoins.map(coin => {
+                    return (
+                        <CoinData
+                            key={coin.id}
+                            name={coin.name}
+                            price={coin.current_price}
+                            symbol={coin.symbol}
+                            market_cap={coin.total_volume}
+                            image={coin.image}
+                            price_change_percentage_24h={coin.price_change_percentage_24h}
+                            ath={coin.ath}
+                        />
+
+                    );
+                })}
+            </div>
         </div>
+
     );
 }
 

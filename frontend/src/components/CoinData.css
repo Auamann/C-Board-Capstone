@@ -1,0 +1,65 @@
+.coin-card{
+    overflow: hidden;
+    text-align: center;
+    border-radius: 1rem;
+    position: page;
+    width: 320px;
+    margin: 2rem;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.5);
+}
+
+.coin-row {
+    margin-bottom: 65px;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.coin-image {
+    margin-top: 1.2rem;
+    height: 40px;
+    clip-path: circle(60px at center);
+}
+
+.coin-name  {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.coin-symbol {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+    padding-top: 8px;
+}
+
+.coin-name-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    font-weight: 700;
+}
+.coin-change {
+    background-color: transparent;
+    padding-top: 10px;
+
+}
+
+.coin-market_cap {
+    width: auto;
+    padding-top: 8px;
+    background-color: transparent;
+}
+
+.coin-price{
+    width: auto;
+    padding-top: 8px;
+    background-color: transparent;
+}
+
+.coin-ath {
+    padding-top: 10px;
+}
