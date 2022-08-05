@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+    background-color: #1a1a1c;
+    color: #fff;
+}
+.coin-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.coin-row {
+    margin-bottom: 65px;
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.search-text {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+.search-bar{
+    padding-left: 16px;
+    width: 300px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    background-color: white;
+
+}
+
+.search-bar::placeholder {
+    color: black;
+}
+
