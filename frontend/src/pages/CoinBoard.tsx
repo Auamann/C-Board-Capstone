@@ -31,8 +31,10 @@ function CoinBoard() {
 
     return (
         <div className='coin-app'>
+            <h1>C-Board</h1>
+            <h1 className='search-text'>Search a Coin</h1>
             <div className='coin-row'>
-                <h1 className='search-text'>Search a Coin</h1>
+
                 <form>
                     <input
                         className='search-bar'
@@ -41,7 +43,9 @@ function CoinBoard() {
                         placeholder='Search'
                     />
                 </form>
+
             </div>
+
             <div className="coin-container">
                 {filteredCoins.map(coin => {
                     return (
@@ -54,6 +58,7 @@ function CoinBoard() {
                             image={coin.image}
                             price_change_percentage_24h={coin.price_change_percentage_24h}
                             ath={coin.ath}
+                            market_data={coin.id}
                         />
 
                     );

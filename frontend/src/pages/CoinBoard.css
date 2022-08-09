@@ -51,8 +51,10 @@
     transform: scale(1.08);
     transition: .3s ease-in-out;
     cursor: pointer;
+    color: #6900ff;
 
 }
+
 
 
 
