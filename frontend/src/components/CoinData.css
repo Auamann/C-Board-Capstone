@@ -58,8 +58,21 @@
     width: auto;
     padding-top: 8px;
     background-color: transparent;
+    margin-top: 8px;
 }
 
 .coin-ath {
     padding-top: 10px;
+}
+
+.red {
+    color: #f00606;
+}
+
+.green {
+    color: #11d811;
+}
+
+.coin-price-change {
+    margin-top: 8px;
 }

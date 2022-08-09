@@ -12,13 +12,15 @@ interface CoinProps {
     symbol: string
     price_change_percentage_24h: number,
     ath: number
+    market_data: string
 
 }
 
 export default function CoinData(props: CoinProps) {
     return (
 
-        <div className='coin-card'>
+
+            <div className='coin-card'>
             <div className='coin-row'>
                 <div>
 
@@ -29,10 +31,20 @@ export default function CoinData(props: CoinProps) {
                 </div>
 
                 <div className='coin-data'>
+
                     <p className='coin-price'>${props.price} </p>
+                    <div className="coin-price-change">
+                    {props.price_change_percentage_24h < 0 ? (
+                        <p className='coin-percent red'>{props.price_change_percentage_24h.toFixed(2)}%</p>
+                    ) : (
+                        <p className='coin-percent green'>{props.price_change_percentage_24h.toFixed(2)}%</p>
+                    )}</div>
+
                     <p className='coin-market_cap'>Mkt Cap: ${props.market_cap.toLocaleString()} </p>
-                    <p className="coin-change">24h Change: {props.price_change_percentage_24h.toFixed(2)}%</p>
                     <p className="coin-ath">ATH: ${props.ath}</p>
+
+
+
 
                 </div>
             </div>
