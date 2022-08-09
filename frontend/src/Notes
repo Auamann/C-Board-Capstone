@@ -1,0 +1,16 @@
+Allgemein:
+Arbeiten in Branches und beschreibenden Commits / Machbar !
+Deployment per Heroku / Machbar !
+Funktionalität deiner App (Speichern von Coins der Nutzer, Bearbeitung dieser Liste, Coin-Rechner) / Coin Rechner sollte machbar sein.!
+
+Frontend:
+Passende Seiten der einzelnen Funktionalitäten mit genutztem CSS
+TypeScript nutzen und Werte typisieren
+
+Backend:
+Datenbank einbinden und nutzen / Machbar !
+Security einbauen und nutzen / Machbar !
+
+Unit-Tests für die Service Klassen
+Integrationstest
+Fehlerbehandlung
