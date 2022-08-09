@@ -1,7 +1,8 @@
 import React from "react";
 import {Route, Routes} from 'react-router-dom'
-import MainPage from "./pages/MainPage";
 import CoinBoard from "./pages/CoinBoard";
+import LoginPage from "./security/LoginPage";
+import RegisterPage from "./security/RegisterPage";
 
 
 function App() {
@@ -11,8 +12,9 @@ function App() {
         <div>
 
             <Routes>
-                <Route path="/" element={<MainPage/>}/>
+                <Route path="/" element={<LoginPage />} />
                 <Route path="/board" element={<CoinBoard/>}/>
+                <Route path="/register" element={<RegisterPage />} />
             </Routes>
 
         </div>
